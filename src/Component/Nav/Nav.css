@@ -1,0 +1,232 @@
+#Nav{
+  width: 100%;
+  height: 160px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.nav1{
+  width: 100%;
+  height: 50%;
+  border-bottom: 0.5px solid rgba(149, 146, 146, 0.844);
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.nav2{
+  width: 100%;
+  height: 50%;
+ background-color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+.svg11{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.svg11 svg{
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+.svg11 h3{
+  font-size: 12px;
+  color: rgba(50, 49, 49, 0.844);
+  font-weight: 300;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1{
+  font-size: 18px;
+  font-weight:300 ;
+  color: red;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.search input{
+  width: 260px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-left: 20px;
+  border: 1px solid black;
+  font-size: 15px;
+  color: black;
+  outline: none;
+}
+.search button{
+  padding: 10px;
+background-color: red;
+color: white;
+font-size: 16px;
+border-radius: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+border: none;
+transition: all 0.2s ;
+cursor: pointer;
+}
+.search button:hover{
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+}
+.search svg{
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.search button:hover svg{
+color: red;
+}
+.ham{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#btn1{
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  transition: all 0.1s;
+}
+#btn1:hover{
+  background-color: rgba(232, 230, 230, 0.844);
+}
+#btn2{
+  border: 1px solid rgba(50, 49, 49, 0.844);
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.1s;
+}
+#svg1{
+  width: 18px;
+  height: 18px;
+  fill: rgba(50, 49, 49, 0.844);
+
+}
+#svg2{
+  width: 25px;
+  height: 25px;
+  fill: rgba(232, 230, 230, 0.844);
+}
+#btn2:hover{
+  box-shadow: 2px 2px 10px black;
+}
+.hamburger{
+  position: absolute;
+  width: 220px;
+  height: 230px;
+  background-color: white;
+  right: 3%;
+  top:45%;
+  box-shadow: 2px 2px 10px rgba(50, 49, 49, 0.844);
+  border-radius: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.ham1{
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+}
+.ham1:hover{
+  background-color: rgba(149, 146, 146, 0.844);
+}
+#a .active{
+  border-bottom: 1px solid black;
+}
+@media (max-width:900px){
+  #btn1{
+    display: none;
+  }
+}
+@media(max-width:880px){
+  #logo h1{
+    display: none;
+  }
+  #nav1{
+    overflow: hidden;
+    padding: 10px;
+  }
+  #nav2{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: start;
+    padding: 10px;
+
+  }
+  .sv11{
+    flex-shrink: 0;
+    scrollbar-width: none;
+  }
+  .search input{
+    width: 180px;
+    font-size:15px ;
+  }
+  .search button span{
+    display: none;
+  }
+  .search{
+    gap: 20px;
+  }
+}
+@media(max-width:500px){
+  #btn2{
+    border: none;
+    padding: 0;
+  }
+  #svg2{
+    display: none;
+  }
+  #svg1{
+    width: 25px;
+    height: 25px;
+    fill: black;
+  }
+}
